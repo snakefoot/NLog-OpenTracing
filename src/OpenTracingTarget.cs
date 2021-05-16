@@ -18,6 +18,7 @@
             ContextProperties.Add(new TargetPropertyWithContext("component", "${logger}"));
             ContextProperties.Add(new TargetPropertyWithContext("level", "${level}"));
             ContextProperties.Add(new TargetPropertyWithContext("message", "${message}"));
+            ContextProperties.Add(new TargetPropertyWithContext("event", "${event-properties:EventId_Name}") { IncludeEmptyValue = false });
             ContextProperties.Add(new TargetPropertyWithContext("eventid", "${event-properties:EventId_Id}") { IncludeEmptyValue = false });
         }
 
